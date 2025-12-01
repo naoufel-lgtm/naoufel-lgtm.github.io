@@ -1,15 +1,84 @@
-h1{
-font-size: 30px;
-text-align: center;
-color: #de7471
-}
-
-p{
-font-size: 20px;
-text-align: left;
-font-family: Helvetica, sans-serif;
-}
-
+/* --- CONFIGURATION GLOBALE --- */
 body {
-background-color: #007471;
+    background-color: #050505; /* Fond quasi noir */
+    color: #ffffff; /* Texte blanc */
+    font-family: 'Courier New', Courier, monospace; /* Police style "Machine à écrire" */
+    text-align: center; /* Tout centrer */
+    padding-top: 50px;
+}
+
+/* --- LA CARTE FUTURISTE --- */
+.cyber-card {
+    background-color: #1a1a1a; /* Gris très foncé */
+    border: 2px solid #00ff41; /* Bordure vert matrix */
+    width: 300px; /* Largeur fixe pour faire une belle carte */
+    margin: 0 auto; /* Permet de centrer la carte au milieu de la page */
+    padding: 20px;
+    
+    /* L'EFFET WOW : Une ombre portée verte qui brille (Glow effect) */
+    box-shadow: 0 0 20px #00ff41; 
+    border-radius: 15px; /* Coins arrondis */
+}
+
+/* --- L'IMAGE --- */
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Rend l'image parfaitement ronde */
+    border: 3px solid #f20089; /* Bordure rose néon */
+}
+
+/* --- TYPOGRAPHIE & COULEURS --- */
+h1 {
+    font-size: 22px;
+    letter-spacing: 2px; /* Espacement entre les lettres */
+}
+
+.neon-text {
+    color: #f20089; /* Rose néon */
+    text-shadow: 2px 2px #560032; /* Petite ombre portée sur le texte */
+}
+
+.status {
+    font-size: 14px;
+    border-bottom: 1px dashed #555; /* Ligne pointillée sous le statut */
+    padding-bottom: 10px;
+}
+
+.online {
+    color: #00ff41; /* Vert vif */
+    font-weight: bold;
+    animation: clignoter 1.5s infinite; /* Bonus: Animation (voir tout en bas) */
+}
+
+.bio {
+    font-size: 14px;
+    line-height: 1.6; /* Aère les lignes de texte */
+    color: #cccccc;
+}
+
+/* --- LES BOUTONS (LIENS) --- */
+a {
+    display: block; /* Met les liens l'un en dessous de l'autre */
+    background-color: #3d002e;
+    color: #f20089;
+    text-decoration: none; /* Pas de soulignement moche */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #f20089;
+    transition: 0.3s; /* Transition fluide au survol */
+}
+
+/* Quand on passe la souris sur le lien */
+a:hover {
+    background-color: #f20089;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* --- BONUS : PETITE ANIMATION DE CLIGNOTEMENT --- */
+@keyframes clignoter {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
 }
